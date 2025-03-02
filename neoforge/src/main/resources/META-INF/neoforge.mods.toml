@@ -4,7 +4,7 @@ loaderVersion = "[4,)"
 license = "Insert License Here"
 
 [[mixins]]
-config = "basefiguraaddon.mixins.json"
+config = "jigcompats.mixins.json"
 
 [[mods]]
 modId = "${mod_id}"
@@ -33,5 +33,12 @@ side = "BOTH"
 modId = "figura"
 type = "required"
 versionRange = "[${figura_version},)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "create"
+type = "optional"
+versionRange = "[6.0.0,)"
 ordering = "AFTER"
 side = "BOTH"

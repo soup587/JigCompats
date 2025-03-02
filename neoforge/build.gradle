@@ -41,6 +41,12 @@ dependencies {
 
     modImplementation("org.figuramc:figura-neoforge:$figura_version")
 
+    modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}") { transitive = false }
+    modRuntimeOnly("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}") { transitive = false }
+
+    modRuntimeOnly("com.tterrag.registrate:Registrate:${registrate}")
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 }

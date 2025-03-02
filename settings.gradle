@@ -7,7 +7,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'basefiguraaddon'
+rootProject.name = 'jigcompats'
 
 include 'common'
 include 'fabric'

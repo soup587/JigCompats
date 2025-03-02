@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "soup587.mixin.neoforge",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "lua.LivingEntityAPIMixin",
+    "lua.EntityAPIMixin",
+    "lua.RendererAPIMixin",
+    "create.PlayerSkyhookRendererMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

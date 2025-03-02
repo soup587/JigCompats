@@ -2,7 +2,7 @@ package soup587.fabric;
 
 import net.fabricmc.api.ModInitializer;
 
-import soup587.BaseFiguraAddon;
+import soup587.JigCompats;
 
 public final class BaseFiguraAddonFabric implements ModInitializer {
     @Override
@@ -12,6 +12,6 @@ public final class BaseFiguraAddonFabric implements ModInitializer {
         // Proceed with mild caution.
 
         // Run our common setup.
-        BaseFiguraAddon.init();
+        JigCompats.init();
     }
 }
