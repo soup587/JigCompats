@@ -23,7 +23,7 @@ public class PlayerSkyhookRendererMixin {
     private static void jigcreate$afterSetupAnim(Player player, HumanoidModel<?> model, CallbackInfo ci) {
         Avatar a = AvatarManager.getAvatar(player);
         if (RenderUtils.vanillaModelAndScript(a)) {
-            if (!((RendererAPIAccessor) (Object) (a.luaRuntime.renderer)).getSkyhookAnimation()) {
+            if (!((RendererAPIAccessor) (Object) (a.luaRuntime.renderer)).shouldSkyhookAnimation()) {
                 ci.cancel();
             }
         }

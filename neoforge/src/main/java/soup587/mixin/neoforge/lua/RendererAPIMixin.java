@@ -18,8 +18,8 @@ public abstract class RendererAPIMixin implements RendererAPIAccessor {
     }
 
     @LuaWhitelist
-    @LuaMethodDoc("renderer.create.get_skyhook_animation")
-    public boolean getSkyhookAnimation() {
+    @LuaMethodDoc("renderer.create.should_skyhook_animation")
+    public boolean shouldSkyhookAnimation() {
         return skyHookAnimation;
     }
 }

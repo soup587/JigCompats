@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "MIT"
 
 [[mixins]]
 config = "jigcompats.mixins.json"
@@ -10,6 +10,7 @@ config = "jigcompats.mixins.json"
 modId = "${mod_id}"
 version = "${version}"
 displayName = "${mod_name}"
+logoFile="icon.png"
 authors = "${authors}"
 description = "${description}"
 

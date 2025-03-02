@@ -1,0 +1,5 @@
+{
+  "figura.docs.living_entity.create.is_riding_chain_conveyor": "Returns true if this entity is riding a Chain Conveyor",
+  "figura.docs.renderer.create.should_skyhook_animation": "Gets if you should play the Chain Conveyor riding animation",
+  "figura.docs.renderer.create.set_skyhook_animation": "Sets if you should play the Chain Conveyor riding animation"
+}
