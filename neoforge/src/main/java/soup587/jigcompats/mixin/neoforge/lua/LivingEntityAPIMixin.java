@@ -1,5 +1,6 @@
 package soup587.jigcompats.mixin.neoforge.lua;
 
+import com.simibubi.create.content.equipment.armor.CardboardArmorHandler;
 import com.simibubi.create.content.kinetics.chainConveyor.ServerChainConveyorHandler;
 import net.minecraft.world.entity.LivingEntity;
 import org.figuramc.figura.lua.LuaWhitelist;
@@ -17,6 +18,14 @@ public abstract class LivingEntityAPIMixin<T extends LivingEntity> extends Entit
     public boolean isRidingChainConveyor() {
         checkEntity();
         return ServerChainConveyorHandler.hangingPlayers.containsKey(entityUUID);
+    }
+
+    @Unique
+    @LuaWhitelist
+    @LuaMethodDoc("living_entity.create.is_cardboard_stealth")
+    public boolean isCardboardStealth() {
+        checkEntity();
+        return CardboardArmorHandler.testForStealth(entity);
     }
 
 }

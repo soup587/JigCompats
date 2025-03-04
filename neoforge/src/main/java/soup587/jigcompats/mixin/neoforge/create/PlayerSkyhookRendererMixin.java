@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import soup587.mixin.ducks.lua.RendererAPIAccessor;
+import soup587.jigcompats.ducks.neoforge.lua.RendererAPIAccessor;
 
 @Mixin(PlayerSkyhookRenderer.class)
 public class PlayerSkyhookRendererMixin {

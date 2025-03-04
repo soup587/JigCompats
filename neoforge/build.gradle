@@ -42,8 +42,9 @@ dependencies {
     modImplementation("org.figuramc:figura-neoforge:$figura_version")
 
     modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
-    modRuntimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}") { transitive = false }
-    modRuntimeOnly("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}") { transitive = false }
+    modCompileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
+    modImplementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
 
     modRuntimeOnly("com.tterrag.registrate:Registrate:${registrate}")
 

@@ -6,8 +6,9 @@
   "mixins": [
     "neoforge.lua.EntityAPIMixin",
     "neoforge.lua.LivingEntityAPIMixin",
+    "neoforge.lua.RendererAPIMixin",
     "neoforge.create.PlayerSkyhookRendererMixin",
-    "neoforge.lua.RendererAPIMixin"
+    "neoforge.create.CardboardArmorHandlerClientMixin"
   ],
   "injectors": {
     "defaultRequire": 1
