@@ -1,5 +1,6 @@
-package soup587.JigCompats.ducks.forge;
+package soup587.jigcompats.ducks.forge;
 
 public interface RendererAPIAccessor {
     boolean shouldSkyhookAnimation();
+    boolean shouldCardboardBox();
 }

@@ -1,4 +1,4 @@
-package soup587.JigCompats.mixin.forge.lua;
+package soup587.jigcompats.mixin.forge.lua;
 
 import net.minecraft.world.entity.Entity;
 import org.figuramc.figura.lua.api.entity.EntityAPI;

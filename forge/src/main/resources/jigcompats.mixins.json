@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "soup587.JigCompats.mixin",
+  "package": "soup587.jigcompats.mixin",
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "client": [
@@ -9,7 +9,9 @@
     "forge.lua.EntityAPIMixin",
     "forge.lua.LivingEntityAPIMixin",
     "forge.create.PlayerSkyhookRendererMixin",
-    "forge.lua.RendererAPIMixin"
+    "forge.lua.RendererAPIMixin",
+    "forge.create.CardboardArmorHandlerClientMixin",
+    "forge.create.CardboardArmorStealthOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1

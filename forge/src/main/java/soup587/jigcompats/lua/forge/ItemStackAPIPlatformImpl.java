@@ -1,4 +1,4 @@
-package soup587.JigCompats.lua.forge;
+package soup587.jigcompats.lua.forge;
 
 import com.tacz.guns.api.item.IGun;
 import org.figuramc.figura.lua.api.world.ItemStackAPI;

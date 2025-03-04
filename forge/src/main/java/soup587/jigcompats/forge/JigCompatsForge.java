@@ -1,4 +1,4 @@
-package soup587.JigCompats.forge;
+package soup587.jigcompats.forge;
 
 import net.minecraftforge.fml.common.Mod;
 import soup587.JigCompats.JigCompats;

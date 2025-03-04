@@ -1,4 +1,4 @@
-package soup587.JigCompats.mixin.forge.create;
+package soup587.jigcompats.mixin.forge.create;
 
 import com.simibubi.create.foundation.render.PlayerSkyhookRenderer;
 import net.minecraft.client.model.HumanoidModel;
@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import soup587.JigCompats.ducks.forge.RendererAPIAccessor;
+import soup587.jigcompats.ducks.forge.RendererAPIAccessor;
 
 @Mixin(value = PlayerSkyhookRenderer.class, remap = false)
 public class PlayerSkyhookRendererMixin {

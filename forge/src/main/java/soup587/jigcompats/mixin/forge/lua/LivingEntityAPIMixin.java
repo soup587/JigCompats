@@ -1,11 +1,11 @@
-package soup587.JigCompats.mixin.forge.lua;
+package soup587.jigcompats.mixin.forge.lua;
 
+import com.simibubi.create.content.equipment.armor.CardboardArmorHandler;
 import com.simibubi.create.content.kinetics.chainConveyor.ServerChainConveyorHandler;
 import net.minecraft.world.entity.LivingEntity;
 import org.figuramc.figura.lua.LuaWhitelist;
 import org.figuramc.figura.lua.api.entity.LivingEntityAPI;
 import org.figuramc.figura.lua.docs.LuaMethodDoc;
-import org.figuramc.figura.utils.PlatformUtils;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
@@ -16,11 +16,16 @@ public abstract class LivingEntityAPIMixin<T extends LivingEntity> extends Entit
     @LuaWhitelist
     @LuaMethodDoc("living_entity.create.is_riding_chain_conveyor")
     public boolean isRidingChainConveyor() {
-        if (!PlatformUtils.isModLoaded("create")) {
-            return false;
-        }
         checkEntity();
         return ServerChainConveyorHandler.hangingPlayers.containsKey(entityUUID);
+    }
+
+    @Unique
+    @LuaWhitelist
+    @LuaMethodDoc("living_entity.create.is_cardboard_stealth")
+    public boolean isCardboardStealth() {
+        checkEntity();
+        return CardboardArmorHandler.testForStealth(entity);
     }
 
 }
