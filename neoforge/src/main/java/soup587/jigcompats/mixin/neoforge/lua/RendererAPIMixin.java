@@ -1,4 +1,4 @@
-package soup587.mixin.neoforge.lua;
+package soup587.jigcompats.mixin.neoforge.lua;
 
 import org.figuramc.figura.lua.LuaWhitelist;
 import org.figuramc.figura.lua.api.RendererAPI;

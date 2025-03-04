@@ -1,15 +1,13 @@
 {
   "required": true,
-  "package": "soup587.mixin.neoforge",
+  "package": "soup587.jigcompats.mixin",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
-  "client": [
-    "lua.LivingEntityAPIMixin",
-    "lua.EntityAPIMixin",
-    "lua.RendererAPIMixin",
-    "create.PlayerSkyhookRendererMixin"
-  ],
   "mixins": [
+    "neoforge.lua.EntityAPIMixin",
+    "neoforge.lua.LivingEntityAPIMixin",
+    "neoforge.create.PlayerSkyhookRendererMixin",
+    "neoforge.lua.RendererAPIMixin"
   ],
   "injectors": {
     "defaultRequire": 1

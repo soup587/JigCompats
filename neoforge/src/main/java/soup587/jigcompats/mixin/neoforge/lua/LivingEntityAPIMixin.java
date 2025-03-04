@@ -1,4 +1,4 @@
-package soup587.mixin.neoforge.lua;
+package soup587.jigcompats.mixin.neoforge.lua;
 
 import com.simibubi.create.content.kinetics.chainConveyor.ServerChainConveyorHandler;
 import net.minecraft.world.entity.LivingEntity;

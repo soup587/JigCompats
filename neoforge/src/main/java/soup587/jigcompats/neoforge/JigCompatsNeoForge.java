@@ -1,4 +1,4 @@
-package soup587.neoforge;
+package soup587.jigcompats.neoforge;
 
 import net.neoforged.fml.common.Mod;
 

@@ -1,4 +1,4 @@
-package soup587.mixin.neoforge.create;
+package soup587.jigcompats.mixin.neoforge.create;
 
 import com.simibubi.create.foundation.render.PlayerSkyhookRenderer;
 import net.minecraft.client.model.HumanoidModel;
