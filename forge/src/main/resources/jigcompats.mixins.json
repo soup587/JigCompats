@@ -6,6 +6,10 @@
   "client": [
   ],
   "mixins": [
+    "forge.lua.EntityAPIMixin",
+    "forge.lua.LivingEntityAPIMixin",
+    "forge.create.PlayerSkyhookRendererMixin",
+    "forge.lua.RendererAPIMixin"
   ],
   "injectors": {
     "defaultRequire": 1

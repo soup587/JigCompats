@@ -42,6 +42,13 @@ dependencies {
 
     modCompileOnly "maven.modrinth:timeless-and-classics-zero:$tacz_version"
 
+    modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
+    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${minecraft_version}:${flywheel_version}")
+    modRuntimeOnly("dev.engine-room.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
+    modImplementation("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}")
+
+    modImplementation("com.tterrag.registrate:Registrate:${registrate}")
+
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
 
     // Figura forge
