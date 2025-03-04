@@ -15,11 +15,11 @@ import soup587.jigcompats.ducks.neoforge.lua.RendererAPIAccessor;
 public class CardboardArmorHandlerClientMixin {
 
     @Inject(
-            method = "playerRendersAsBoxWhenSneaking",
-            at = @At(value = "INVOKE", target = "Lnet/neoforged/neoforge/client/event/RenderPlayerEvent$Pre;setCanceled(Z)V"),
+           method = "playerRendersAsBoxWhenSneaking",
+            at = @At("HEAD"),
             cancellable = true
     )
-    private static void playerRendersAsBoxWhenSneaking(RenderPlayerEvent.Pre event, CallbackInfo ci) {
+    private static void jigcreate$playerRendersAsBoxWhenSneaking(RenderPlayerEvent.Pre event, CallbackInfo ci) {
         Avatar a = AvatarManager.getAvatar(event.getEntity());
         if (RenderUtils.vanillaModelAndScript(a)) {
             if (!((RendererAPIAccessor) (Object) (a.luaRuntime.renderer)).shouldCardboardBox()) {
@@ -27,5 +27,4 @@ public class CardboardArmorHandlerClientMixin {
             }
         }
     }
-
 }

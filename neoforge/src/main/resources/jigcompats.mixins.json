@@ -8,7 +8,8 @@
     "neoforge.lua.LivingEntityAPIMixin",
     "neoforge.lua.RendererAPIMixin",
     "neoforge.create.PlayerSkyhookRendererMixin",
-    "neoforge.create.CardboardArmorHandlerClientMixin"
+    "neoforge.create.CardboardArmorHandlerClientMixin",
+    "neoforge.create.CardboardArmorStealthOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1
