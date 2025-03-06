@@ -2,6 +2,10 @@ architectury {
     common rootProject.enabled_platforms.split(',')
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/jigcompats.accesswidener")
+}
+
 dependencies {
     // Libraries
     compileOnly("com.github.FiguraMC.luaj:luaj-core:$luaj-figura")

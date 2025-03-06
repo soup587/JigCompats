@@ -6,14 +6,21 @@ import net.minecraft.world.entity.player.Player;
 import org.figuramc.figura.avatar.Avatar;
 import org.figuramc.figura.avatar.AvatarManager;
 import org.figuramc.figura.utils.RenderUtils;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import soup587.jigcompats.ducks.neoforge.lua.RendererAPIAccessor;
 
+import java.util.Set;
+import java.util.UUID;
+
 @Mixin(PlayerSkyhookRenderer.class)
-public class PlayerSkyhookRendererMixin {
+public class PlayerSkyhookRendererMixin implements PlayerSkyhookRendererAccessor {
+
+    @Shadow @Final private static Set<UUID> hangingPlayers;
 
     @Inject(
             method = "afterSetupAnim",

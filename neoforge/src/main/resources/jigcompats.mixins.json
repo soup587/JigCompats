@@ -9,7 +9,8 @@
     "neoforge.lua.RendererAPIMixin",
     "neoforge.create.PlayerSkyhookRendererMixin",
     "neoforge.create.CardboardArmorHandlerClientMixin",
-    "neoforge.create.CardboardArmorStealthOverlayMixin"
+    "neoforge.create.CardboardArmorStealthOverlayMixin",
+    "neoforge.create.PlayerSkyhookRendererAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
