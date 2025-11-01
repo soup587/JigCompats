@@ -1,4 +1,4 @@
-package soup587.JigCompats.lua;
+package soup587.jigcompats.lua;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import org.figuramc.figura.lua.api.world.ItemStackAPI;

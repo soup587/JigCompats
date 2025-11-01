@@ -1,4 +1,4 @@
-package soup587.JigCompats.lua.fabric;
+package soup587.jigcompats.lua.fabric;
 
 import org.figuramc.figura.lua.api.world.ItemStackAPI;
 

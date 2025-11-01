@@ -1,4 +1,4 @@
-package soup587.JigCompats;
+package soup587.jigcompats;
 
 
 

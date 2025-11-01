@@ -7,6 +7,8 @@ architectury {
     forge()
 }
 
+archivesBaseName = rootProject.archives_base_name + "-forge"
+
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
 
@@ -54,7 +56,16 @@ dependencies {
     // Figura forge
     modImplementation("org.figuramc:figura-forge:$figura_version")
 
-    common(project(path: ":common", configuration: "namedElements")) { transitive false }
+    modImplementation("at.petra-k.hexcasting:hexcasting-forge-$minecraft_version:$hexcasting_version")
+    implementation("thedarkcolour:kotlinforforge:4.10.0")
+    modLocalRuntime("at.petra-k.paucal:paucal-forge-$minecraft_version:$paucal_version")
+    modLocalRuntime("com.samsthenerd.inline:inline-forge:$minecraft_version-$inline_version") { transitive false }
+    modLocalRuntime("vazkii.patchouli:Patchouli:$minecraft_version-$patchouli_version-FORGE")
+    modLocalRuntime("top.theillusivec4.caelus:caelus-forge:3.1.0+1.20")
+
+    modApi("me.shedaniel.cloth:cloth-config-forge:$cloth_config_version")
+
+    common(project(path: ":common", configuration: "namedElements")) { transitive = false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }
 
@@ -109,7 +120,7 @@ components.java {
 publishing {
     publications {
         mavenForge(MavenPublication) {
-            artifactId = rootProject.archives_base_name + "-" + project.name
+            artifactId = rootProject.archives_base_name + "-" + "forge" + "-" + project.name
             from components.java
         }
     }

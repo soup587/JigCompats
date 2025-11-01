@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[45,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/soup587/JigCompats/issues"
 license = "Insert License Here"
 
 [[mods]]

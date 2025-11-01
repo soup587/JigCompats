@@ -7,6 +7,8 @@ architectury {
     fabric()
 }
 
+archivesBaseName = rootProject.archives_base_name + "-fabric"
+
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
 }
@@ -17,6 +19,12 @@ configurations {
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
     developmentFabric.extendsFrom common
+}
+
+configurations.configureEach {
+    resolutionStrategy {
+        force("net.fabricmc:fabric-loader:$fabric_loader_version")
+    }
 }
 
 dependencies {
@@ -31,6 +39,19 @@ dependencies {
 
     // Figura fabric
     modImplementation("org.figuramc:figura-fabric:$figura_version")
+
+    modImplementation("at.petra-k.hexcasting:hexcasting-fabric-$minecraft_version:$hexcasting_version")
+    modRuntimeOnly("net.fabricmc:fabric-language-kotlin:1.9.4+kotlin.1.8.21")
+    modLocalRuntime("dev.onyxstudios.cardinal-components-api:cardinal-components-api:5.2.1")
+    modLocalRuntime("at.petra-k.paucal:paucal-fabric-$minecraft_version:$paucal_version")
+    modLocalRuntime("com.samsthenerd.inline:inline-fabric:$minecraft_version-$inline_version") { transitive false }
+    modLocalRuntime("vazkii.patchouli:Patchouli:$minecraft_version-$patchouli_version-FABRIC")
+    modLocalRuntime("io.github.tropheusj:serialization-hooks:0.4.99999")
+
+    modApi("me.shedaniel.cloth:cloth-config-fabric:$cloth_config_version") {
+        exclude(group: "net.fabricmc.fabric-api")
+        exclude(group: "net.fabricmc", module: "fabric-loader")
+    }
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
@@ -88,7 +109,7 @@ components.java {
 publishing {
     publications {
         mavenFabric(MavenPublication) {
-            artifactId = rootProject.archives_base_name + "-" + project.name
+            artifactId = rootProject.archives_base_name + "-" + "fabric" + "-" + project.name
             from components.java
         }
     }

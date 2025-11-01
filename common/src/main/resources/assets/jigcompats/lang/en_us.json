@@ -1,8 +1,16 @@
 {
-  "figura.docs.living_entity.create.is_riding_chain_conveyor": "Returns true if this entity is riding a Chain Conveyor",
-  "figura.docs.living_entity.create.is_cardboard_stealth": "Returns true if this entity is in stealth using Cardboard Armor",
-  "figura.docs.renderer.create.should_skyhook_animation": "Gets if you should play the Chain Conveyor riding animation",
-  "figura.docs.renderer.create.set_skyhook_animation": "Sets if you should play the Chain Conveyor riding animation",
-  "figura.docs.renderer.create.should_cardboard_box": "Gets if you should hide in a box when using Cardboard Armor",
-  "figura.docs.renderer.create.set_cardboard_box": "Sets if you should hide in a box when using Cardboard Armor\nThis will also disable the first person overlay"
+  "figura.docs.living_entity.create.is_riding_chain_conveyor": "[Create]\nReturns true if this entity is riding a Chain Conveyor",
+  "figura.docs.living_entity.create.is_cardboard_stealth": "[Create]\nReturns true if this entity is in stealth using Cardboard Armor",
+  "figura.docs.renderer.create.should_skyhook_animation": "[Create]\nGets if you should play the Chain Conveyor riding animation",
+  "figura.docs.renderer.create.set_skyhook_animation": "[Create]\nSets if you should play the Chain Conveyor riding animation",
+  "figura.docs.renderer.create.should_cardboard_box": "[Create]\nGets if you should hide in a box when using Cardboard Armor",
+
+  "figura.docs.host.hex.get_sentinel": "[Hexcasting]\nReturns a list of data about your Sentinel, if it exists\nThis includes its position, dimension, and whether it extends your ambit or not\nReturns null if not summoned",
+  "figura.docs.itemstack.hex.can_hold_media": "[Hexcasting]\nGets if the item can contain media in any capacity",
+  "figura.docs.itemstack.hex.get_media": "[Hexcasting]\nReturns how much media is contained within this item, if any",
+  "figura.docs.itemstack.hex.get_max_media": "[Hexcasting]\nReturns the maximum amount of media this item can contain, if any",
+  "figura.docs.itemstack.hex.can_recharge": "[Hexcasting]\nGets if this item's media reserves can be refilled",
+  "figura.docs.itemstack.hex.can_provide_media": "[Hexcasting]\nGets if this item's media can provide media to external sources",
+  "figura.docs.itemstack.hex.get_consumption_priority":"[Hexcasting]\nReturns the priority for this media holder to be selected when casting a hex\nHigher priorities are taken first",
+  "figura.docs.itemstack.hex.can_craft_battery": "[Hexcasting]\nGets if this item can be used to create a battery for media items"
 }

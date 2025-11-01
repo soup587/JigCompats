@@ -31,6 +31,13 @@ subprojects {
         maven { url "https://mvn.devos.one/snapshots" }
         maven { url "https://maven.tterrag.com" } // Registrate
         maven { url "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
+
+        maven { url "https://maven.blamejared.com" } // hexcasting
+        maven { url "https://maven.ladysnake.org/releases" }
+        maven { url "https://maven.terraformersmc.com/" }
+        maven { url "https://maven.hexxy.media" }
+        maven { url "https://thedarkcolour.github.io/KotlinForForge/" }
+        maven { url "https://maven.theillusivec4.top" }
     }
 
     dependencies {
@@ -49,7 +56,6 @@ allprojects {
     apply plugin: "maven-publish"
 
     java_version = rootProject.java_version
-	archivesBaseName = rootProject.archives_base_name
 	version = rootProject.mod_version + "+" + rootProject.minecraft_version
 	group = rootProject.maven_group
     figura_version = rootProject.figura_version

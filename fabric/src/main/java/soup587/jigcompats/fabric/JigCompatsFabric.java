@@ -1,7 +1,7 @@
-package soup587.JigCompats.fabric;
+package soup587.jigcompats.fabric;
 
 import net.fabricmc.api.ModInitializer;
-import soup587.JigCompats.JigCompats;
+import soup587.jigcompats.JigCompats;
 
 /**
  * A mod class is not technically needed for Fabric to load the Plugin, but it's still nice to have.

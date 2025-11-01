@@ -1,7 +1,7 @@
 package soup587.jigcompats.forge;
 
 import net.minecraftforge.fml.common.Mod;
-import soup587.JigCompats.JigCompats;
+import soup587.jigcompats.JigCompats;
 
 /**
  * A mod class is needed for Forge to load the Plugin

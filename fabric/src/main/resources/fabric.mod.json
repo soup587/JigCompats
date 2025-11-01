@@ -8,17 +8,21 @@
     "${authors}"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/soup587/JigCompats",
+    "issues": "https://github.com/soup587/JigCompats/issues"
   },
   "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "icon": "assets/jigcompats/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "soup587.JigCompats.fabric.JigCompatsFabric"
+      "soup587.jigcompats.fabric.JigCompatsFabric"
     ]
   },
+  "mixins": [
+    "jigcompats-common.mixins.json",
+    "jigcompats.mixins.json"
+  ],
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.20",
