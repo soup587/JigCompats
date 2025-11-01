@@ -33,7 +33,7 @@ jobs:
           path: fabric/build/libs/
 
       - name: Upload Forge artifacts to GitHub
-        uses: actions/upload-artifact@v4bump
+        uses: actions/upload-artifact@v4
         with:
           name: Forge-Artifacts
           path: forge/build/libs/
